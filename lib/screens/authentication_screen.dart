@@ -75,6 +75,9 @@ class _AuthenticationScreenState extends State<AuthenticatonScreen> {
           content: Text(error.message ?? 'Authentication failed.'),
         ),
       );
+      setState(() {
+        _isAuthenticating = false; //TODO delete text Fields content 
+      });
     }
   }
 
